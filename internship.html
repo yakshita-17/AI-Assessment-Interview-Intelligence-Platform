@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Assessment & Interview Intelligence Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>AI Interview Intelligence</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#assessment">Assessment</a>
+            <a href="#interview">Interview</a>
+            <a href="#results">Results</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div>
+            <h1>
+                AI Assessment &<br>
+                Interview Intelligence Platform
+            </h1>
+
+            <p>
+                Assess skills, conduct intelligent interviews,
+                and get AI-powered performance insights.
+            </p>
+
+            <button onclick="startAssessment()">
+                Start Assessment
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- Assessment Section -->
+    <!-- Assessment Section -->
+<!-- Assessment Section -->
+<section id="assessment">
+
+    <h2>AI Assessment</h2>
+
+    <p>Select a category to begin your assessment.</p>
+
+    <div class="assessment-categories">
+
+        <button onclick="startCategoryAssessment('Quantitative Aptitude')">
+            Quantitative Aptitude
+        </button>
+
+        <button onclick="startCategoryAssessment('Logical Reasoning')">
+            Logical Reasoning
+        </button>
+
+        <button onclick="startCategoryAssessment('Verbal Ability')">
+            Verbal Ability
+        </button>
+
+    </div>
+
+    <div id="assessmentBox"></div>
+
+</section>
+
+    <!-- Interview Section -->
+   <!-- Interview Section -->
+<section id="interview">
+
+    <h2>AI Interview</h2>
+
+    <p>
+        Practice interviews and receive AI-powered feedback
+        about your performance.
+    </p>
+
+    <div class="card" id="interviewBox">
+
+        <h3>AI Interview Practice</h3>
+
+        <p>
+            Answer interview questions and improve your
+            communication and technical skills.
+        </p>
+
+        <button onclick="startInterview()">
+            Start AI Interview
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Dashboard Section -->
+<section id="dashboard">
+
+    <h2>Candidate Dashboard</h2>
+
+    <p>Welcome, Candidate 👋</p>
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-card">
+            <h3>Assessment</h3>
+            <p>Score</p>
+            <h2 id="assessmentScoreDisplay">Not completed</h2>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>AI Interview</h3>
+            <p>Score</p>
+            <h2 id="interviewScoreDisplay">Not completed</h2>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Overall Performance</h3>
+            <p id="overallPerformance">No results yet</p>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Results Section -->
+    <section id="results">
+
+        <h2>Performance Results</h2>
+
+        <div class="card">
+
+            <h3>AI Performance Analysis</h3>
+
+            <p>
+                Your assessment and interview results
+                will appear here.
+            </p>
+
+            <button onclick="showResults()">
+                View Results
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

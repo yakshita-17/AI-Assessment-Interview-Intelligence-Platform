@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+/* Header */
+
+header {
+    background-color: #172554;
+    color: white;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 10%;
+
+    background-color: #e0e7ff;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #2563eb;
+    color: white;
+
+    border: none;
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* Sections */
+
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+
+/* Cards */
+
+.card {
+    background-color: white;
+
+    max-width: 600px;
+
+    margin: 30px auto;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 20px;
+}
+/* Assessment */
+
+#assessmentBox {
+    max-width: 700px;
+}
+
+#assessmentBox h2 {
+    margin: 20px 0;
+}
+
+#timer {
+    color: #dc2626;
+    margin-bottom: 20px;
+}
+
+#assessmentBox button {
+    width: 100%;
+    margin: 5px 0;
+    text-align: left;
+}
+
+#assessmentBox button:hover {
+    transform: translateY(-2px);
+}
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    margin: 15px 0 25px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #2563eb;
+    border-radius: 10px;
+}
+/* =========================
+   DASHBOARD POLISH
+   ========================= */
+
+#dashboard {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#dashboard h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#dashboard > p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.dashboard-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.dashboard-card p {
+    font-size: 18px;
+}
+
+.dashboard-card h2 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+
+    #dashboard h2 {
+        font-size: 32px;
+    }
+}
+/* =========================
+   ASSESSMENT POLISH
+   ========================= */
+
+#assessmentBox {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+    text-align: center;
+}
+
+/* Timer */
+#assessmentTimer {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background: #eef3ff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Question */
+#assessmentBox h2 {
+    font-size: 28px;
+    margin: 25px 0;
+}
+
+/* Answer buttons */
+#assessmentBox button {
+    width: 80%;
+    max-width: 500px;
+    padding: 14px 20px;
+    margin: 8px auto;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#assessmentBox button:hover {
+    transform: translateY(-2px);
+}
+
+/* Progress bar */
+.progress-container {
+    width: 100%;
+    height: 10px;
+    margin: 20px 0;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 10px;
+    background: #2563eb;
+}
+
+/* Result */
+#assessmentBox p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    #assessmentBox {
+        margin: 20px;
+        padding: 25px 15px;
+    }
+
+    #assessmentBox h2 {
+        font-size: 22px;
+    }
+
+    #assessmentBox button {
+        width: 100%;
+    }
+}
